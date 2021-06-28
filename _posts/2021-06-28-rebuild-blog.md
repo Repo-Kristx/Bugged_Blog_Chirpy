@@ -25,7 +25,7 @@ tag: [Jekyll, Github Pages]
 
 #### 2.1.2 安装Jekyll
 
-```powershell
+```console
 $ gem install jekyll
 ```
 
@@ -33,7 +33,7 @@ $ gem install jekyll
 
 bundler是Jekyll 3.3之后的版本使用的运行方式，所以在运行jekyll博客的时候必须使用bundler语句
 
-```powershell
+```console
 $ gem install bundler jekyll
 or
 $ gem install jekyll bundler
@@ -52,7 +52,7 @@ $ gem install jekyll bundler
 
 如下，将myblog替换为你要创建的博客文件夹名
 
-```powershell
+```console
 $ jekyll new myblog
 ```
 
@@ -60,7 +60,7 @@ $ jekyll new myblog
 
 新建一个空文件夹，然后用Jekyll在里面新建blog
 
-```powershell
+```console
 $ mkdir mblog
 $ cd mblog
 $ jekyll new .
@@ -68,7 +68,7 @@ $ jekyll new .
 
 删掉刚才新建的第二个文档。嘛就算是熟悉一下powershell的语法。
 
-```powershell
+```console
 $ cd ..
 $ rm mblog
 $ y
@@ -78,7 +78,7 @@ $ y
 
 因为Jekyll在搭建系统的时候可能会有一些依赖文件，所以需要用bundler来搭建这些需要的依赖
 
-```powershell
+```console
 $ cd myblog
 $ dir
 $ bundle install
@@ -86,7 +86,7 @@ $ bundle install
 
 现在，这个博客就算是搭建完成并且可以在本地进行运行，使用如下操作：
 
-```powershell
+```console
 $ bundle exec jekyll serve
 ```
 
@@ -94,7 +94,7 @@ $ bundle exec jekyll serve
 
 这时候就可以在本地的`127.0.0.1:4000`端口运行这个网站，`ctrl + click`打开这个链接就可以看到你建立的这个网站
 
-```powershell
+```console
 PS E:\Programfls_extra\myblog> bundle exec jekyll s
 Configuration file: E:/Programfls_extra/myblog/_config.yml
             Source: E:/Programfls_extra/myblog
@@ -110,7 +110,7 @@ Configuration file: E:/Programfls_extra/myblog/_config.yml
 
 如果没有出现上面这个链接，你可能需要重新安装一下`webrick`这个组件
 
-```powershell
+```console
 $ bundle add webrick
 ```
 
@@ -118,7 +118,7 @@ $ bundle add webrick
 
 如果你电脑上之前就有装 vs code 的话，快速查看博客文件的目录结构：
 
-```powershell
+```console
 $ code .
 ```
 
@@ -178,12 +178,8 @@ site这个文件夹在上传到端的时候不会被上传。但是我们通过�
 
 如果你想让Jekyll单独输出一个这样的站点文件夹，比如把他输出到这个目录下的dist文件夹，可以这样做：
 
-```powershell
+```console
 $ jekyll build --destination = ./dist
 ```
 
 同样，上面的build可以缩写成b
-
-#### 2.2.5 在本地下载模板网页并配置本地运行
-
-s
