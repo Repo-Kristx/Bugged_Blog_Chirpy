@@ -1,13 +1,15 @@
 ---
 layout: post
 title:  "重新学习建立网站"
-date:   2021-06-28 12:21:00 +0800
+author: Repo Xu
+date:   2021-06-30 22:38:00 +0800
 categories: [Developing, Blogging]
 tag: [Jekyll, Github Pages]
+math: false
+mermaid: false
+pin: false
 ---
-# 重新学习建立网站
-
-## 1.缘起
+# 1.缘起
 
 之前在考试周的时候就一直想着做一个博客，所以在做课设的闲暇之余，以至于之前通了几次宵。我都一直在抽出时间来做我自己的博客，但是苦于自己并没有相关的编程基础，也没学过css，也不了解html，甚至连md的语法都不是很清楚。又缘于前两天因为OneDrive配置失败搞得自己电脑的document文件夹也乱了，把电脑强制重置了21H1的版本，重置了所有的应用，也算是为了迎接马上要到来的Win11更新。今天又准备来搞一搞自己的博客。
 
@@ -15,21 +17,23 @@ tag: [Jekyll, Github Pages]
 
 > [Jekyll 博客系列 - 01 快速入门 - YouTube](https://www.youtube.com/watch?v=Zt_QzSbyDcw&list=PLK2w-tGRdrj7vzX7Y-GqKPb2QPrHCYZY1)
 
-## 2.入门操作 
+***
 
-### 2.1 搭建环境
+# 2.入门操作 
 
-#### 2.1.1 安装ruby
+## 2.1 搭建环境
+
+### 2.1.1 安装ruby
 
 [Ruby 3.0.1](https://github.com/oneclick/rubyinstaller2/releases/download/RubyInstaller-3.0.1-1/rubyinstaller-devkit-3.0.1-1-x64.exe) 使用这个链接下载并安装到windows下
 
-#### 2.1.2 安装Jekyll
+### 2.1.2 安装Jekyll
 
 ```console
 $ gem install jekyll
 ```
 
-#### 2.1.3 安装bundler
+### 2.1.3 安装bundler
 
 bundler是Jekyll 3.3之后的版本使用的运行方式，所以在运行jekyll博客的时候必须使用bundler语句
 
@@ -42,11 +46,11 @@ $ gem install jekyll bundler
 
 这样基础的开发环境就已经搭建完毕
 
-### 2.2 在本地搭建博客
+## 2.2 在本地搭建博客
 
 两种方式
 
-#### 2.2.1 simple one
+### 2.2.1 simple one
 
 直接新建一个博客文件夹（需要在想要创建的地方shift进入powershell下）
 
@@ -56,7 +60,7 @@ $ gem install jekyll bundler
 $ jekyll new myblog
 ```
 
-#### 2.2.2 complicated one
+### 2.2.2 complicated one
 
 新建一个空文件夹，然后用Jekyll在里面新建blog
 
@@ -74,7 +78,7 @@ $ rm mblog
 $ y
 ```
 
-#### 2.2.3 继续搭建基本文件
+### 2.2.3 继续搭建基本文件
 
 因为Jekyll在搭建系统的时候可能会有一些依赖文件，所以需要用bundler来搭建这些需要的依赖
 
@@ -122,11 +126,11 @@ $ bundle add webrick
 $ code .
 ```
 
-#### 2.2.4 其他需要了解的事情
+### 2.2.4 其他需要了解的事情
 
 在Jekyll的文件目录库中包括很多文件，逐个阐明。
 
-##### 2.2.4.1 _config,yml
+#### 2.2.4.1 _config,yml
 
 众所周知，config是configuration的缩写，即站点配置文件。所有对网站属性的修改都从这里开始。每次使用bundle构建站点之后直到下一次构建之前，所有对于这个文件的修改都不会生效，换言之，想要修改它就必须重新发布。
 
@@ -162,15 +166,15 @@ $ code .
 
   exclude这一项写的是在发布网站的时候Jekyll不会往站点发布的文件，比如包括的内容在发布端应该是找不到的，后文中会详细分析。
 
-##### 2.2.4.2 _posts
+#### 2.2.4.2 _posts
 
 posts，就是发布的意思，你将要在端口发布的markdown格式的博文都会储存在这个地方。
 
-##### 2.2.4.3 _drafts
+#### 2.2.4.3 _drafts
 
 drafts，就是手稿的意思。就是博文的草稿箱之类的东西，你并不想把这篇博文上传到端口，但是还没有写完还需要保留一部分以后继续编辑，那么你就可以把md文件暂时放在drafts文件夹里面，这样Jekyll在发布的时候也会自动地忽略这个文件夹中的博文，~~但是这篇文章仍然会被发布到云端？~~
 
-##### 2.2.4.4 _site
+#### 2.2.4.4 _site
 
 site这个文件夹在上传到端的时候不会被上传。但是我们通过端口访问的网站事实上就是Jekyll生成的这个目录里面的静态网页。事实上，也就是一个映射。甚至你可以直接把这个文件夹里面的html代码直接拷到虚拟主机或者服务器里面来构建静态网页并运行发布，完全没有问题。
 
@@ -183,3 +187,121 @@ $ jekyll build --destination = ./dist
 ```
 
 同样，上面的build可以缩写成b
+
+***
+
+# 3. fork 自己的 blog
+
+经过上面的学习，相信大家已经了解到如何建立一个简单的自定义博客了，但是初始模板 mininal 毕竟是很朴素的，如果想要锦上添花一下，你就需要去找一找博客模板。
+
+Jekyll 提供了巨量的网站模板，大多数都能够正常运行。由于开发人员包括各种行业的爱好者与程序员，难免存在质量较低者，不要灰心，可以寻找其他心仪的模板进行 fork。
+
+以我使用的模板 [chirpy](https://github.com/cotes2020/chirpy-starter/) 为例，我将对这个模板的具体使用方法进行讲解。
+
+## 3.1 find a template
+
+Jekyll 官方提供了以下链接：
+
++ [GitHub.com #jekyll-theme repos](https://github.com/topics/jekyll-theme)
++ [jamstackthemes.dev](https://jamstackthemes.dev/ssg/jekyll/)
++ [jekyllthemes.org](http://jekyllthemes.org/)
++ [jekyllthemes.io](https://jekyllthemes.io/)
++ [jekyll-themes.com](https://jekyll-themes.com/)
+
+本部分介绍 chirpy 模板的初始包 “chirpy-starter”，打开上文中提到的链接，点击 `Use This Template`，使用这个模板创建你自己的库。
+
+![template](/assets/img/recreate_blog/template.png)_**图3.1**  使用模板创建库_
+
+而后按照图3.2中的方式 fork 你的 blog 仓库，把其中的 “XXXXX” 改成你自己的 github 用户名，当然你换成别的也可以，但是你需要对 `_config.yml` 里的 `baseurl` 这一项作修改。
+
+```yaml
+baseurl: /your repository name
+```
+
+这样你生成的网页的名字将变成
+
+```yaml
+https://your_github_name.github.io/your_repository_name
+# your_github_name: 你的 github 用户名
+# your_repository_name: 你创建的仓库名称
+```
+
+![template1](/assets/img/recreate_blog/template_2.png)_**图3.2**  使用模板创建库_
+
+## 3.2 change everything locally
+
+将之前做好的库clone到本地
+
+```console
+$ git clone https://github.com/repo-kristx/repo-kristx.github.io.git
+```
+
+安装依赖
+
+```console
+$ bundle
+or
+$ bundle i
+or
+$ bundle install
+(all the same effect...)
+```
+
+执行以下语句
+
+```console
+$ bash tools/init.sh
+```
+
+这条语句有以下作用：
+
+1. 从你的本地库移除一系列文件 / 文件夹：
+   + `.travis.yml`
+   + `/_posts`
+   + `/docs`
+
+2. 将会在 GitHub 工作流下自动创建一个工作流，配置 GitHub Action：把 `.github/workflows/pages-deploy.yml.hook` 的后缀 `.hook` 去掉，删除 `.github` 文件夹下的其他目录与文件。
+3. 自动提交一个 commit 以保存上述文件的更改，这将自动触发 GitHub 远端的工作流。
+
+## 3.3 custom your blog
+
+按照 2 中的教程，对你的 blog 的内容进行更改，注意保存。如果你不打算更改模板提供的框架，那么你大概只需要建立 `_posts` 文件夹与更改 `_config.yml` 中的内容，包括但不限于：
+
++ `url`
++ `avatar`
++ `timezone`
++ `lang`
++ `links`
+
+完成更改后，记得在本地运行一下以确保内容正确无误：
+
+```console
+$ bundle exec jekyll serve
+```
+
+并在运行结束后按 `ctrl`+`c` 退出本地调试模式
+
+## 3.4  deployment
+
+刚才创建了 GitHub 的远程库，并且我们已经把他 pull 到了本地，现在我们再检查一下：
+
++ 确保 Jekyll 站点存在文件 `.github/workflows/pages-deploy.yml`。没有的话，新建并填入[示例工作流](https://github.com/cotes2020/jekyll-theme-chirpy/blob/master/.github/workflows/pages-deploy.yml.hook)的内容, 注意参数 `on.push.branches` 的值必须和您的仓库默认分支名相同。
++ 检查您的 Jekyll 站点是否有文件 `tools/test.sh` 和 `tools/deploy.sh`. 没有的话, 从本仓库拷贝到您的 Jekyll 项目
+
+其实正常套用 template 的 fork 能够按照上面的步骤完成，完全可以省略这两步。
+
+再近端使用 `git` 命令将你的更改发到远端：
+
+```console
+$ git add -A			# 添加本地更改记录到 /.git
+$ git commit -m "XXX"		# 注释你的本次更改到 /.git
+$ git push origin main		# 发布到 remote 端
+```
+
+推送任意一个 commit 如上到 `origin/main` 以触发 GitHub Actions workflow。一旦 build完毕并且成功，远端将会自动出现一个新分支 `gh-pages` 用来存储构建的站点文件。
+
+回到 GitHub 上的仓库（远端），通过*Settings* → *Options* → *GitHub Pages* 选择分支 `gh-pages` 作为[发布源](https://docs.github.com/en/github/working-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site)：
+
+![push](/assets/img/recreate_blog/push.png)_**图3.3**  发布你的 blog_
+
+大功告成！接下来就可以按照上图中的指引访问你的 blog 了~
