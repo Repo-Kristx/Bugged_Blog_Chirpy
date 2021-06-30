@@ -1,5 +1,10 @@
 ### repo-kristx.github.io
 
-说实话能做出来这么一个网站（尽管是套模板）已经是很不容易
+[![Gem Version](https://img.shields.io/gem/v/jekyll-theme-chirpy?color=brightgreen)](https://rubygems.org/gems/jekyll-theme-chirpy)[![996.icu](https://img.shields.io/badge/link-996.icu-red.svg)](https://996.icu)
 
-也算是没白给了，辛苦自己。
+
+
+依靠 cotes2020 先生制作的 Jekyll 模板 “chirpy” 制作的个人博客
+
+简约风格，在查看博文的时候右下角可以查看博文的目录
+
