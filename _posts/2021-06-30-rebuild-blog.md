@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "重新学习建立网站"
+title:  重新学习建立网站
 author: Repo Xu
 date:   2021-06-30 22:38:00 +0800
 categories: [Developing, Blogging]
@@ -9,11 +9,12 @@ math: false
 mermaid: false
 pin: false
 ---
+
 # 1.缘起
 
-之前在考试周的时候就一直想着做一个博客，所以在做课设的闲暇之余，以至于之前通了几次宵。我都一直在抽出时间来做我自己的博客，但是苦于自己并没有相关的编程基础，也没学过css，也不了解html，甚至连md的语法都不是很清楚。又缘于前两天因为OneDrive配置失败搞得自己电脑的document文件夹也乱了，把电脑强制重置了21H1的版本，重置了所有的应用，也算是为了迎接马上要到来的Win11更新。今天又准备来搞一搞自己的博客。
+之前在考试周的时候就一直想着做一个博客，所以在做课设的闲暇之余，以至于之前通了几次宵。我都一直在抽出时间来做我自己的博客，但是苦于自己并没有相关的编程基础，也没学过 CSS，也不了解 html，甚至连 markdown 的语法都不是很清楚。又缘于前两天因为 OneDrive 配置失败搞得自己电脑的 document 文件夹也乱了，把电脑强制重置了 21H1 的版本，重置了所有的应用，也算是为了迎接马上要到来的 Win11 更新。今天又准备来搞一搞自己的博客。
 
-其实是有这么回事的，本来想着自己再按照之前的方法用官网的教程再装一个ruby、Jekyll，然后直接重新做一个网页。但是总有种重蹈覆辙的方法，于是今天从YouTube上找到了这么一个人的视频，也算是好好学习一下到底怎么建立一个网站。网站附下：
+其实是有这么回事的，本来想着自己再按照之前的方法用官网的教程再装一个 ruby、Jekyll，然后直接重新做一个网页。但是总有种重蹈覆辙的方法，于是今天从 YouTube 上找到了这么一个人的视频，也算是好好学习一下到底怎么建立一个网站。网站附下：
 
 > [Jekyll 博客系列 - 01 快速入门 - YouTube](https://www.youtube.com/watch?v=Zt_QzSbyDcw&list=PLK2w-tGRdrj7vzX7Y-GqKPb2QPrHCYZY1)
 
@@ -25,7 +26,7 @@ pin: false
 
 ### 2.1.1 安装ruby
 
-[Ruby 3.0.1](https://github.com/oneclick/rubyinstaller2/releases/download/RubyInstaller-3.0.1-1/rubyinstaller-devkit-3.0.1-1-x64.exe) 使用这个链接下载并安装到windows下
+[Ruby 2.7.3-1](https://github.com/oneclick/rubyinstaller2/releases/download/RubyInstaller-2.7.3-1/rubyinstaller-devkit-2.7.3-1-x64.exe) 使用这个链接下载并安装到windows下
 
 ### 2.1.2 安装Jekyll
 
@@ -290,7 +291,7 @@ $ bundle exec jekyll serve
 
 其实正常套用 template 的 fork 能够按照上面的步骤完成，完全可以省略这两步。
 
-再近端使用 `git` 命令将你的更改发到远端：
+在近端使用 `git` 命令将你的更改发到远端：
 
 ```console
 $ git add -A			# 添加本地更改记录到 /.git

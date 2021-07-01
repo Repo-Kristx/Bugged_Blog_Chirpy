@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "如果想开展光子辐照实验，产生大量光子的方式有哪些？换言之，γ源有哪些？"
+title:  如果想开展光子辐照实验，产生大量光子的方式有哪些？换言之，γ源有哪些？
 date:   2021-03-30 16:08:00 +0800
 categories: [Nuclear Science]
 tag: [gamma ray, source]
