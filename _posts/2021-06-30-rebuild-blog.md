@@ -30,7 +30,7 @@ pin: false
 
 ### 2.1.2 安装Jekyll
 
-```console
+```ruby
 $ gem install jekyll
 ```
 
@@ -38,7 +38,7 @@ $ gem install jekyll
 
 bundler是Jekyll 3.3之后的版本使用的运行方式，所以在运行jekyll博客的时候必须使用bundler语句
 
-```console
+```ruby
 $ gem install bundler jekyll
 or
 $ gem install jekyll bundler
@@ -99,7 +99,7 @@ $ bundle exec jekyll serve
 
 这时候就可以在本地的`127.0.0.1:4000`端口运行这个网站，`ctrl + click`打开这个链接就可以看到你建立的这个网站
 
-```console
+```terminal
 PS E:\Programfls_extra\myblog> bundle exec jekyll s
 Configuration file: E:/Programfls_extra/myblog/_config.yml
             Source: E:/Programfls_extra/myblog
