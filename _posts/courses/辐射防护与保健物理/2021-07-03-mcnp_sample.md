@@ -1,7 +1,7 @@
 ---
 title: MCNP项目示例
 time: 2021-07-03 15:33:00 +0800
-categories: [Nuclear Science]
+categories: [Courses, 辐射防护与保健物理]
 tag: [MCNP]
 pin: false
 ---
