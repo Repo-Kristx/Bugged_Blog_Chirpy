@@ -26,4 +26,5 @@ pin: true
 >
 > + 在**<u>此页面</u>**下留言
 > + 评论到我的 twitter **私信**
-> + 发送邮件到我的 [**gmail**](repokristx@gmail.com)
+> + 发送邮件到我的 gmail（参见页面左下角邮箱示意图）
+
