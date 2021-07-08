@@ -16,7 +16,7 @@ pin: true
 
 ​		欢迎大家访问学习。
 
-​		**博文链接：[我的博文存档库](https://repo-kristx.github.io/Archive/)**
+​		**博文链接**：[**我的博文存档库**](https://repo-kristx.github.io/Archive/){:target="_blank"}
 
 <p align="right">Repo Xu</p>
 
