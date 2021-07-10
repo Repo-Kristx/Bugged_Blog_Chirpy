@@ -31,3 +31,16 @@ order: 4
 + 熟练操作请 fork "[jekyll-theme-chirpy](https://github.com/cotes2020/jekyll-theme-chirpy.git)"
 + 新手请 fork "[chirpy-starter](https://github.com/cotes2020/chirpy-starter.git)"
 
+
+
+### Attentions !
+
+>**暂时停更中。**
+>
+>我意识到更新博客不是目的，而是方法。
+>
+>博客的生成，目的首先是为了自己能够记录自己的学习本能。
+>
+>不是哗众取宠，博人眼球的玩物。
+>
+>脚踏实地更新tech files，做好自己渴望的那个技术人。
