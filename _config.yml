@@ -85,7 +85,7 @@ disqus:
   comments: true  # boolean type, the global switch for posts comments.
   shortname: 'repo-kristx-github-io'    # Fill with your Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
 
-paginate: 10
+paginate: 10  # this is the maxium posts in the fuckin main page, now it is set to 10
 
 # ------------ The following options are not recommended to be modified ------------------
 
