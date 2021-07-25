@@ -3,6 +3,7 @@ title: 小记 中科院近代物理所
 date: 2021-07-18 22:04:00 +0800
 categories: [Dairy]
 tags: [IMPCAS]
+math: true
 pin: true
 
 ---
