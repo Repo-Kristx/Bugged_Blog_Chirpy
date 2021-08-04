@@ -88,6 +88,7 @@ disqus:
 paginate: 10  # this is the maxium posts in the fuckin main page, now it is set to 10
 
 # ------------ The following options are not recommended to be modified ------------------
+# ------------  Unless you are a professioner in jekyll blog building   ------------------
 
 kramdown:
   syntax_highlighter: rouge
