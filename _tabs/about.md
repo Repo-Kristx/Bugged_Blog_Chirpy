@@ -1,5 +1,5 @@
 ---
-title: About
+title: About Blog
 icon: fas fa-info
 order: 4
 ---
@@ -10,11 +10,11 @@ order: 4
 [![GitHub license](https://img.shields.io/github/license/cotes2020/jekyll-theme-chirpy.svg)](https://github.com/cotes2020/jekyll-theme-chirpy/blob/master/LICENSE)
 [![996.icu](https://img.shields.io/badge/link-996.icu-red.svg)](https://996.icu)
 
-依靠 cotes2020 先生制作的 Jekyll 模板 “[chirpy](https://github.com/cotes2020/jekyll-theme-chirpy)” 制作的个人博客
+依靠 cotes2020 先生制作的 Jekyll 模板 “[chirpy](https://github.com/cotes2020/jekyll-theme-chirpy){:target="_blank"}” 制作的个人博客
 
 简约风格，在查看博文的时候右下角可以查看博文的目录
 
-核科学 / 计算科学 / 技术宅 / 吐槽墙
+**核科学** / 计算科学 / 技术宅 / 吐槽墙
 
 欢迎来到我的博客！
 
@@ -22,9 +22,11 @@ order: 4
 
 #### external links
 
-+ [Repo Kristx - 博客园](https://www.cnblogs.com/repo-kristx/)
++ [**博文存档网站 - Archive**](https://repo-kristx.github.io/Archive/){:target="_blank"}
 
-+ [暮色遐想 - 知乎](https://www.zhihu.com/people/mu-se-xia-xiang)
++ [Repo Kristx - 博客园](https://www.cnblogs.com/repo-kristx/){:target="_blank"}
+
++ [暮色遐想 - 知乎](https://www.zhihu.com/people/mu-se-xia-xiang){:target="_blank"}
 
 #### fork your blog
 
